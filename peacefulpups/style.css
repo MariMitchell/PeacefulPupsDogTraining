@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
+
+/* Color scheme 
+Ivory - #F5FBEF
+Cambridge Blue - #92AD94
+Reseda Green - #748B75
+Rose Ebony - #503D42
+
+
+Hunter Green - #3A5A40
+Sage - #A3B18A
+Timberwolf - #DAD7CD
+Fern Green - #588157
+Brunswick Green - #344E41
+*/
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: #f5fbef;
+    font-family: "Hind+Siliguri", "sans-serif";
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #748B75;
+    height: 200px;
+    padding: 30px;
+}
+
+nav a {
+    float: right;
+    padding: 25px 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f5fbef;
+}
+
+nav p {
+    float: left;
+    padding: 25px 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f5fbef;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #3A5A40;
+}
+
+/*Nav end */
+
+/*Gallery Start */
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #748B75;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+} */
+
+
+/*Gallery End */
+
+/* Form style */
+
+.textbox {
+    border-radius: 20px;
+    padding: 10px;
+    width: 35%;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    width: 71%;
+}
+
+
+.submit-button {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: auto;
+}
+
+.submit-button:hover {
+    color: #3A5A40;
+    background-color: #3A5A40;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+/* Form style end */
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #748B75;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    font-size: large;
+}
+
+.space {
+    padding: 100px;
+}
+
+.center {
+    text-align: center;
+}
+
+.background-red {
+    background-color: #503D42;
+}
+
+.background-green {
+    background-color: #748B75;
+}
+
+.white-text {
+    color: white;
+}

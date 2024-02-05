@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Main Page</title>
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <div>
+        <nav>
+            <p>Peaceful Pups Dog Training</p>
+            <a href="#contact">Contact</a>
+            <a href="#training">Training</a>
+            <a href="#about">About</a>
+        </nav>
+    </div>
+
+    <main>
+        <!--About-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid" src="Images/MainPhoto.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="space">Helping Dogs and Dog Owners Live Peacefully Together</h1>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <h2 id="about">Our Methods</h2>
+                    <p class="center">At Peaceful Pups Dog Training we strive off of positive, science based methods
+                        such as force free and LIMA (Least Intrusive, Minimally Aversive).
+                        We set out to use the most humane and effective tactics in order to achieve a desired behavior.
+                        We achieve these behaviors through a variety of techniques including, shaping, positive
+                        reinforcement, and errorless learning.
+                    </p>
+                    <h2>Certified</h2>
+                    <p class="center">The dog industry is wildly unregulated. Certifications prove a trainer is
+                        dedicated to their craft,
+                        indicating they have put time, money, and effort to learn not only about how dogs learn but how
+                        to best help their owners.
+                        At Peaceful Pups Dog Training our staff is either certified or working on their certifications
+                        in an effort to provide quality training and education to both pup and person!
+                    </p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <!--Image Gallery-->
+            <h2>Our Clients</h2>
+            <div class="slideshow-container space">
+                <div class="mySlides center">
+                    <img src="Images/Bumi.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/EeveeBat.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/Titus.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/SmartSelect_20230721-202524_Instagram.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/SmartSelect_20230721-202541_Instagram.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/SmartSelect_20230721-202558_Instagram.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/Arizona.jpg" width="auto" height="500px">
+                </div>
+                <!-- The dots/circles -->
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!--Course Descriptions-->
+            <div class="row space background-red white-text" id="training">
+                <div class="col-6 space">
+                    <h2>Private Lessons</h2>
+                    <p>One-on-one training lessons. These lessons can occur anywhere, from your home to your pups
+                        favorite park! Private lessons are very beneficial for families who want to be an active part in
+                        their
+                        pets training and education. In addition to this, we will be focusing on your specific training
+                        goals.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Puppy Socialization</h2>
+                    <p><b>For puppies 6 months and younger:</b>
+                    </p>
+                    <p>The first 16-20 weeks of your puppies life is crucial for
+                        socialization. These sessions provide safe socialization
+                        and constructive play during this period. These sessions allow us to provide a more personalized
+                        socialization experience for you and your pup. They will
+                        learn various skills from how to coexist with you in your home as well as in public and in
+                        distracting environments.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Day Training</h2>
+                    </p>
+                    <p>With day training, I train your dog for the day and teach you how to maintain these skills. These sessions are perfect for 
+                        owners who work full time, have hectic lives, or just want to help provide more training and enrichment for their dogs!
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="Images/EeveeYogurt.jpg">
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-12">
+                    <h1>Contact Us!</h1>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-12">
+                    <h2 id="contact">
+                        Feel free to get in touch!
+                    </h2>
+                    <p>peacefulpupdogtraining@gmail.com</p>
+                    <p>208-994-5030</p>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-12">
+                    <form id="form" class="form" action="peacefulpupdogtraining@gmail.com" method="POST"
+                        enctype="text/plain" name="ContactUs">
+                        <input class="textbox" type="text" id="name" name="name" placeholder="First and Last Name"
+                            required>
+                        <input class="textbox" type="email" id="email" name="email" placeholder="Email Address"
+                            required>
+                        <input class="textbox" type="text" id="phoneNumber" name="phoneNumber"
+                            placeholder="Phone Number" required>
+                        <input class="textbox" type="text" id="classType" name="classType"
+                            placeholder="Which class are you interested in?" required>
+                        <textarea class="textarea" id="comment" name="comment" placeholder="Comment"
+                            required></textarea>
+                        <br>
+                        <input class="submit-button" type="submit" id="submit" name="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="container-fluid background-green">
+            <div class="row">
+                <div class="col-xl-9">
+                    <p style="color: #F5FBEF;">COPYRIGHT © 2023 PEACEFULPUPSDOGTRAINING LLC - ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-xl-3">
+                    <a href="http://www.kalynmitchell.com/">
+                        <p style="float: right; color: #F5FBEF;">Powered by - Kalyn Mitchell</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
