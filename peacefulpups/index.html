@@ -5,6 +5,7 @@
 <head>
     <title>Main Page</title>
     <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,14 +13,16 @@
 
 <body>
     <!--Navigation-->
-    <div>
-        <nav>
-            <p>Peaceful Pups Dog Training</p>
-            <a href="#contact">Contact</a>
+    <nav class="navigation">
+        <div class="topnav" id="myTopnav">
+            <a href="#about">Methods</a>
             <a href="#training">Training</a>
-            <a href="#about">About</a>
-        </nav>
-    </div>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
 
     <main>
         <!--About-->
@@ -78,6 +81,29 @@
                 </div>
                 <div class="mySlides center">
                     <img src="Images/Arizona.jpg" width="auto" height="500px">
+                </div><div class="mySlides center">
+                    <img src="Images/aussiepup.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/bear.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/dogo.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/ebo.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/goldenpup.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/gsp.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/pittie.jpg" width="auto" height="500px">
+                </div>
+                <div class="mySlides center">
+                    <img src="Images/shihtzu.jpg" width="auto" height="500px">
                 </div>
                 <!-- The dots/circles -->
                 <!-- <div style="text-align:center">
@@ -91,7 +117,7 @@
             </div>
             <!--Course Descriptions-->
             <div class="row space background-red white-text" id="training">
-                <div class="col-6 space">
+                <div class="col-12 space">
                     <h2>Private Lessons</h2>
                     <p>One-on-one training lessons. These lessons can occur anywhere, from your home to your pups
                         favorite park! Private lessons are very beneficial for families who want to be an active part in
@@ -119,12 +145,11 @@
                     <br>
                     <h2>Day Training</h2>
                     </p>
-                    <p>With day training, I train your dog for the day and teach you how to maintain these skills. These sessions are perfect for 
-                        owners who work full time, have hectic lives, or just want to help provide more training and enrichment for their dogs!
+                    <p>With day training, I train your dog for the day and teach you how to maintain these skills. These
+                        sessions are perfect for
+                        owners who work full time, have hectic lives, or just want to help provide more training and
+                        enrichment for their dogs!
                     </p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid" src="Images/EeveeYogurt.jpg">
                 </div>
             </div>
             <div class="row space">
@@ -143,7 +168,7 @@
             </div>
             <div class="row center">
                 <div class="col-12">
-                    <form id="form" class="form" action="peacefulpupdogtraining@gmail.com" method="POST"
+                    <form id="form" class="form" action="mailto:peacefulpupdogtraining@gmail.com" method="POST"
                         enctype="text/plain" name="ContactUs">
                         <input class="textbox" type="text" id="name" name="name" placeholder="First and Last Name"
                             required>
@@ -156,7 +181,9 @@
                         <textarea class="textarea" id="comment" name="comment" placeholder="Comment"
                             required></textarea>
                         <br>
-                        <input class="submit-button" type="submit" id="submit" name="submit" value="Send Message">
+                        <div class="col-12">
+                            <input class="submit-button" type="submit" id="submit" name="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -180,6 +207,16 @@
     </footer>
 
     <script src="index.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
